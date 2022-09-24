@@ -68,3 +68,23 @@ class GradMutilpySGD(optim.SGD,Optimizer):
 class Adam(optim.Adam,Optimizer):
     pass 
 
+#---------add adamw 20220924------------------
+@OPTIMS.register_module()
+class AdamW(optim.AdamW,Optimizer):
+    """ AdamW Optimizer.
+
+    Example::
+
+        optimizer = nn.AdamW(model.parameters(), lr, eps=1e-8, betas=(0.9, 0.999))
+        optimizer.step(loss)
+    """
+    def __init__(self,params, lr, eps=1e-8, betas=(0.9, 0.999), weight_decay=0,grad_clip=None):
+        super(AdamW,self).__init__(params, lr, eps, betas, weight_decay)
+        self.grad_clip = grad_clip
+
+    def pre_step(self, loss, retain_graph=False):
+        super(AdamW,self).pre_step(loss)
+        if self.grad_clip is not None:
+            self.clip_grad_norm(**self.grad_clip)
+
+
