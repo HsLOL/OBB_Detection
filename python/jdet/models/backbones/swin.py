@@ -672,5 +672,5 @@ def SwinSmall(pretrained=True, **kwargs):
     model = SwinTransformer(embed_dim=kwargs.get('embed_dim'), 
                             depths=kwargs.get('depths'), 
                             num_heads=kwargs.get('num_heads'))
-    if pretrained: model.load(kwargs.get('pretrained'))
+    if pretrained: model.load(kwargs.get('pth_file'))
     return model
