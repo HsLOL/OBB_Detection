@@ -5,13 +5,13 @@ This project is based on [Jitto](https://github.com/Jittor/jittor) framework. Pl
 ## :busts\_in\_silhouette: Team Members (Random Ranking)
 [Jianhong Han](https://github.com/HsLOL), [Zhonghao Fang](https://github.com/HsLOL), [Zhaoyi Luo](https://github.com/HsLOL)  
 ## :bulb: Features
-- Backbone  
+- **Backbone**  
 - [x] Support Swin-Transformer Tiny/Small/Base/Large Backbone Network.
-- Neck  
+- **Neck**  
 - [x] Support PAFPN network.
-- Optimizer
+- **Optimizer**
 - [x] Support AdamW Optimizer.
-- Some Useful Tools  
+- **Some Useful Tools**  
 - [x] Support Model Ensemble.
 - [x] Support Soft-NMS, Class-Agnostic NMS.
 - [x] Support HSV Data Augmentation.
@@ -28,5 +28,5 @@ We merge the detection results from Oriented R-CNN, S2ANet and ROI Transformer f
 We use extra random horizontal/vertical flip, random rotation for inference phrase.  
 - **Soft NMS and Class-Agnostic NMS**  
 We use Class-Agnostic NMS for post-processtion. Soft-NMS used but not work.  
-## :tada: Visualization  
+## :mag: Visualization  
 ![image](https://github.com/HsLOL/JDET/blob/master/visualization.jpg)
