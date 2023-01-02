@@ -24,7 +24,7 @@ develop-eggs/
 build/
 submit_zips
 *.pth
-*.jpg
+#*.jpg
 .idea
 *.swp
 *.pkl
