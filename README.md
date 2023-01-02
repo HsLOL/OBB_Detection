@@ -18,14 +18,15 @@ This project is based on [Jitto](https://github.com/Jittor/jittor) framework. Pl
 ## :pushpin: Solutions  
 - Training Data Augmentation  
 We use random combination of hsv, horizontal/vertical flip, rotation for data augmentation.  
-- Multi-scale training and testing
+- Multi-scale training and testing  
 The training images are scaled to 0.5,1,1.5 times and cropped to 1024x1024 for training and testing.  
 - Swin Transformer Backbone  
-We use Swin-Transformer as backbone in Oriented R-CNN, S^2ANet and ROI Transformer for better performance.  
+We use Swin-Transformer as backbone in Oriented R-CNN, S2ANet and ROI Transformer for better performance.  
 - Model Ensemble  
-We merge the detection results from Oriented R-CNN, S^2ANet and ROI Transformer for better performance.
-- Test Time Augmentation
+We merge the detection results from Oriented R-CNN, S2ANet and ROI Transformer for better performance.
+- Test Time Augmentation  
 We use extra random horizontal/vertical flip, random rotation for inference phrase.  
-- Soft NMS and Class-Agnostic NMS
+- Soft NMS and Class-Agnostic NMS  
 We use Class-Agnostic NMS for post-processtion. Soft-NMS used but not work.  
-## :tada: Visualization
+## :tada: Visualization  
+![image](https://github.com/HsLOL/JDET/blob/master/visualization.jpg)
