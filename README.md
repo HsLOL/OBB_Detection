@@ -3,7 +3,7 @@ Finalist's solution in the track of Oriented Object Detection in Remote Sensing 
 ## :hammer: Installation
 This project is based on [Jitto](https://github.com/Jittor/jittor) framework. Please follow the official installation [documentation](https://github.com/HsLOL/JDET/blob/master/JDET_README.md) for installation.
 ## :busts\_in\_silhouette: Team Members (Random Ranking)
-[Jianhong Han](https://github.com/HsLOL), [Zhonghao Fang](https://github.com/HsLOL), [Zhaoyi Luo](https://github.com/HsLOL)  
+[Jianhong Han](https://github.com/HsLOL), [Zhonghao Fang](https://github.com/HsLOL), [Zhaoyi Luo](https://github.com/RogerkSen)  
 ## :bulb: Features
 - **Backbone**  
 - [x] Support Swin-Transformer Tiny/Small/Base/Large Backbone Network.
